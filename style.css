@@ -1,0 +1,270 @@
+/* overall styles */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  background-color: #ffffff;
+}
+
+/* all anchor style */
+
+a {
+  text-decoration: none;
+}
+
+/* header design  */
+
+.header-objects {
+  width: 100%;
+  height: 660px;
+  background-color: #2d25a0;
+}
+
+.header-objects:hover .image {
+  transform: translateX(200px);
+  transition: transform ease-in-out 3s;
+}
+.image img {
+  width: 556px;
+  height: 438px;
+  position: relative;
+}
+
+.text-and-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 102px;
+  padding-top: 153px;
+}
+.text {
+  font-size: 64px;
+  line-height: 80px;
+  text-align: left;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 156px;
+}
+.watch-live {
+  height: 44px;
+  width: 168px;
+  background: #e02c6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 27px;
+}
+
+.watch-live a {
+  color: white;
+}
+
+.fa-arrow-right {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* all player cards */
+
+.flex-container,
+.icons,
+.copy-right {
+  display: flex;
+  justify-content: center;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-column-gap: 30px;
+  grid-template-rows: repeat(3, 474px);
+  grid-row-gap: 27px;
+  margin-top: 70px;
+}
+.player-card {
+  padding: 15px 15px 33px 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-card img {
+  width: 300px;
+  height: 256px;
+}
+
+.cards-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  color: #18191f;
+}
+.card-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
+}
+
+/* count down clock */
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px;
+}
+.clock-body {
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  grid-gap: 20px;
+  margin: 20px;
+}
+.time {
+  width: 230px;
+  height: 230px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+
+.clock-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 30px;
+}
+.span-style {
+  color: #ef2f3c;
+}
+
+.clock-time-style {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.card-1 {
+  background-color: #ef2f3c;
+}
+.card-2 {
+  background-color: #f6f4f3;
+}
+.card-3 {
+  background-color: #276fbf;
+}
+
+.card-4 {
+  background-color: #f0a202;
+}
+
+/* youtube video style */
+
+.highlights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 1120px;
+  height: 630px;
+}
+
+/* footer design */
+
+.logo img {
+  height: 110px;
+  width: 476.82px;
+}
+
+.icons {
+  margin: 20px;
+  font-size: 17.07px;
+}
+
+.footer {
+  margin: 63px 0;
+}
+/* .fa-instagram, .fa-dribbble , . */
+.copy-right {
+  font-size: 18px;
+}
+.fa-instagram,
+.fa-dribbble,
+.fa-youtube,
+.fa-twitter {
+  margin: 0 14px;
+  color: #969bab;
+  background: #0b0d1723;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+  .players {
+    grid-template-columns: 330px;
+    grid-template-rows: repeat(9, 474px);
+  }
+  .text-and-image {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    grid-gap: 50px;
+  }
+
+  .header-objects {
+    height: 695px;
+    padding: 33px 16px 0 16px;
+  }
+
+  .image img {
+    width: 329px;
+    height: 259px;
+    position: relative;
+    margin: 0 20px 63 px 20px;
+  }
+
+  .text {
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0;
+  }
+  .watch-live {
+    margin-top: 27px;
+  }
+  .highlights {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clock-body {
+    grid-template-columns: repeat(1, 230px);
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
